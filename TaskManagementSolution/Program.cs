@@ -3,7 +3,8 @@ using Serilog;
 using TaskManagementSolution.Extensions;
 using Microsoft.Extensions.Options;
 using Hangfire;
-
+using Microsoft.EntityFrameworkCore;
+using Persistence;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
